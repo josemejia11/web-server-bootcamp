@@ -10,7 +10,7 @@ const forecast = (location, callback) => {
         } else {
             callback(undefined, body.current.weather_descriptions[0] + ' it is currently ' + body.current.temperature 
             + ' degrees and it feels like ' + body.current.feelslike
-            + ' degrees out.');
+            + ' degrees out. The current humidity is ' + body.current.humidity);
         }
     });
 }
